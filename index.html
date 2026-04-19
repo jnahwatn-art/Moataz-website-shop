@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moataz Web | متجر مواقع احترافي</title>
+    <meta
+      name="description"
+      content="Moataz Web - متجر شخصي فاخر لتصميم وتطوير المواقع وحلول الويب باحترافية عالية."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="splash-screen" id="splashScreen" aria-hidden="true">
+      <div class="splash-content">
+        <div class="logo-wrap" aria-hidden="true">
+          <svg
+            class="brand-logo"
+            viewBox="0 0 220 92"
+            xmlns="http://www.w3.org/2000/svg"
+            role="img"
+            aria-label="Moataz Web Logo"
+          >
+            <defs>
+              <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#f7df9f" />
+                <stop offset="45%" stop-color="#d6ad4f" />
+                <stop offset="100%" stop-color="#9a6b14" />
+              </linearGradient>
+            </defs>
+            <rect x="12" y="10" width="84" height="72" rx="18" fill="#111" />
+            <path
+              d="M26 60V24h9l10 16 10-16h9v36h-8V38l-11 18-11-18v22z"
+              fill="url(#goldGradient)"
+            />
+            <rect x="126" y="10" width="84" height="72" rx="18" fill="#111" />
+            <text
+              x="152"
+              y="60"
+              font-family="Inter, sans-serif"
+              font-size="44"
+              font-weight="800"
+              fill="url(#goldGradient)"
+            >
+              W
+            </text>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <header class="site-header">
+      <nav class="container nav">
+        <a href="#hero" class="brand" aria-label="Moataz Web">
+          <svg
+            class="brand-icon"
+            viewBox="0 0 72 72"
+            xmlns="http://www.w3.org/2000/svg"
+            role="img"
+            aria-hidden="true"
+          >
+            <defs>
+              <linearGradient id="miniGold" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#f7df9f" />
+                <stop offset="45%" stop-color="#d6ad4f" />
+                <stop offset="100%" stop-color="#9a6b14" />
+              </linearGradient>
+            </defs>
+            <rect x="2" y="2" width="68" height="68" rx="15" fill="#111" />
+            <path
+              d="M16 53V19h9l11 16 11-16h9v34h-8V32L36 49 24 32v21z"
+              fill="url(#miniGold)"
+            />
+          </svg>
+          <span>Moataz Web</span>
+        </a>
+
+        <div class="nav-actions">
+          <button id="langSwitch" class="lang-switch" aria-label="Switch language">
+            EN
+          </button>
+          <button id="themeSwitch" class="theme-switch" aria-label="Switch theme" data-i18n="theme_switch">
+            Light
+          </button>
+          <a class="btn btn-gold" href="#contact" data-i18n="nav_cta">ابدأ مشروعك</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero" class="hero section">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow" data-i18n="hero_eyebrow">متجر مواقع شخصي فاخر</p>
+            <h1 data-i18n="hero_title">
+              أحول فكرتك إلى موقع احترافي يبيع عنك ويعكس قوة علامتك.
+            </h1>
+            <p class="lead" data-i18n="hero_desc">
+              أنا مؤتاز، مصمم ومطور مواقع متخصص في بناء حلول ويب عالية الجودة للأفراد
+              والشركات التي تريد نتائج حقيقية وتجربة راقية.
+            </p>
+            <div class="hero-cta">
+              <a class="btn btn-gold" href="#pricing" data-i18n="hero_btn_primary">استعرض الباقات</a>
+              <a class="btn btn-ghost" href="#portfolio" data-i18n="hero_btn_secondary">شاهد الأعمال</a>
+            </div>
+            <div class="trust-row">
+              <span data-i18n="hero_trust_1">تسليم احترافي</span>
+              <span data-i18n="hero_trust_2">أداء سريع</span>
+              <span data-i18n="hero_trust_3">دعم موثوق</span>
+            </div>
+          </div>
+          <aside class="hero-card reveal delay-1" aria-label="Service Highlights">
+            <h3 data-i18n="hero_card_title">لماذا Moataz Web؟</h3>
+            <ul>
+              <li data-i18n="hero_card_item_1">تصميم فاخر مخصص بالكامل</li>
+              <li data-i18n="hero_card_item_2">بنية قابلة للتطوير مع أفضل الممارسات</li>
+              <li data-i18n="hero_card_item_3">تجربة مستخدم موجهة للتحويل</li>
+              <li data-i18n="hero_card_item_4">رحلة متكاملة من الفكرة إلى الإطلاق</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <section id="services" class="section">
+        <div class="container">
+          <div class="section-head reveal">
+            <h2 data-i18n="services_title">الخدمات</h2>
+            <p data-i18n="services_desc">حلول ويب احترافية مصممة لتقوية حضورك ورفع مبيعاتك.</p>
+          </div>
+          <div class="cards-grid services-grid">
+            <article class="card reveal">
+              <h3 data-i18n="service_1_title">مواقع الشركات الفاخرة</h3>
+              <p data-i18n="service_1_desc">مواقع تعكس قيمة العلامة وتزيد ثقة العملاء من أول زيارة.</p>
+            </article>
+            <article class="card reveal delay-1">
+              <h3 data-i18n="service_2_title">متاجر إلكترونية مخصصة</h3>
+              <p data-i18n="service_2_desc">تجربة شراء متقنة مع صفحات بيع قوية ومسار دفع واضح.</p>
+            </article>
+            <article class="card reveal delay-2">
+              <h3 data-i18n="service_3_title">صفحات هبوط عالية التحويل</h3>
+              <p data-i18n="service_3_desc">رسائل تسويقية دقيقة وتصميم يركز على النتائج الفعلية.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="process" class="section alt-section">
+        <div class="container">
+          <div class="section-head reveal">
+            <h2 data-i18n="process_title">آلية العمل الاحترافية</h2>
+            <p data-i18n="process_desc">مراحل واضحة تضمن الجودة والالتزام والنتائج.</p>
+          </div>
+          <div class="timeline">
+            <div class="phase reveal"><span>01</span><h3 data-i18n="phase_1">الاكتشاف (Discovery)</h3></div>
+            <div class="phase reveal delay-1"><span>02</span><h3 data-i18n="phase_2">التصميم (Design)</h3></div>
+            <div class="phase reveal delay-2"><span>03</span><h3 data-i18n="phase_3">التطوير (Development)</h3></div>
+            <div class="phase reveal"><span>04</span><h3 data-i18n="phase_4">الإطلاق (Launch)</h3></div>
+            <div class="phase reveal delay-1"><span>05</span><h3 data-i18n="phase_5">الدعم (Support)</h3></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="pricing" class="section">
+        <div class="container">
+          <div class="section-head reveal">
+            <h2 data-i18n="pricing_title">الباقات</h2>
+            <p data-i18n="pricing_desc">الأسعار قابلة للتعديل مباشرة من الكود حسب استراتيجية العمل.</p>
+          </div>
+          <div class="cards-grid pricing-grid">
+            <article class="price-card reveal">
+              <h3 data-i18n="price_1_name">باقة الانطلاقة</h3>
+              <p class="price" data-i18n="price_1_value">1500 SAR</p>
+              <ul>
+                <li data-i18n="price_1_feature_1">صفحة تعريف احترافية</li>
+                <li data-i18n="price_1_feature_2">تصميم متجاوب بالكامل</li>
+                <li data-i18n="price_1_feature_3">تهيئة أساسية لمحركات البحث</li>
+              </ul>
+            </article>
+            <article class="price-card featured reveal delay-1">
+              <p class="badge" data-i18n="price_best">الأكثر طلبًا</p>
+              <h3 data-i18n="price_2_name">باقة النمو</h3>
+              <p class="price" data-i18n="price_2_value">2000 SAR</p>
+              <ul>
+                <li data-i18n="price_2_feature_1">موقع متعدد الصفحات</li>
+                <li data-i18n="price_2_feature_2">تحسين تجربة الاستخدام والتحويل</li>
+                <li data-i18n="price_2_feature_3">دعم بعد التسليم</li>
+              </ul>
+            </article>
+            <article class="price-card reveal delay-2">
+              <h3 data-i18n="price_3_name">باقة البرستيج</h3>
+              <p class="price" data-i18n="price_3_value">2500 SAR</p>
+              <ul>
+                <li data-i18n="price_3_feature_1">حل ويب مخصص بالكامل</li>
+                <li data-i18n="price_3_feature_2">تكاملات متقدمة وأتمتة</li>
+                <li data-i18n="price_3_feature_3">مرافقة استراتيجية مستمرة</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="portfolio" class="section alt-section">
+        <div class="container">
+          <div class="section-head reveal">
+            <h2 data-i18n="portfolio_title">أعمال سابقة</h2>
+            <p data-i18n="portfolio_desc">نماذج تعكس الاهتمام بالتفاصيل والأداء والتحويل.</p>
+          </div>
+          <div class="cards-grid portfolio-grid">
+            <article class="portfolio-card reveal">
+              <h3 data-i18n="portfolio_1_title">موقع علامة شخصية</h3>
+              <p data-i18n="portfolio_1_desc">بناء هوية رقمية متكاملة مع تدفق عملاء عبر الحجز المباشر.</p>
+            </article>
+            <article class="portfolio-card reveal delay-1">
+              <h3 data-i18n="portfolio_2_title">متجر منتجات رقمية</h3>
+              <p data-i18n="portfolio_2_desc">رفع معدل التحويل من خلال تحسين تجربة الصفحة والشراء.</p>
+            </article>
+            <article class="portfolio-card reveal delay-2">
+              <h3 data-i18n="portfolio_3_title">شركة خدمات B2B</h3>
+              <p data-i18n="portfolio_3_desc">منصة تعريفية احترافية عززت مصداقية الشركة أمام عملائها.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonials" class="section">
+        <div class="container">
+          <div class="section-head reveal">
+            <h2 data-i18n="testimonials_title">آراء العملاء</h2>
+            <p data-i18n="testimonials_desc">ثقة مبنية على جودة التنفيذ والتزام بالمواعيد.</p>
+          </div>
+          <div class="cards-grid">
+            <blockquote class="testimonial reveal">
+              <p data-i18n="testimonial_1">"التصميم فاق توقعاتنا، والنتائج ظهرت خلال أول أسبوع."</p>
+              <cite data-i18n="testimonial_1_author">— مدير شركة ناشئة</cite>
+            </blockquote>
+            <blockquote class="testimonial reveal delay-1">
+              <p data-i18n="testimonial_2">"أكثر ما أعجبني هو الاحتراف والوضوح في كل مرحلة."</p>
+              <cite data-i18n="testimonial_2_author">— صاحبة علامة تجارية</cite>
+            </blockquote>
+            <blockquote class="testimonial reveal delay-2">
+              <p data-i18n="testimonial_3">"موقع سريع، جميل، ويحول الزوار إلى عملاء فعليين."</p>
+              <cite data-i18n="testimonial_3_author">— مؤسس متجر إلكتروني</cite>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="section alt-section">
+        <div class="container">
+          <div class="section-head reveal">
+            <h2 data-i18n="faq_title">الأسئلة الشائعة</h2>
+          </div>
+          <div class="faq-list reveal">
+            <details>
+              <summary data-i18n="faq_1_q">كم يستغرق تنفيذ المشروع؟</summary>
+              <p data-i18n="faq_1_a">عادة بين 7 إلى 30 يومًا حسب نطاق وتعقيد المشروع.</p>
+            </details>
+            <details>
+              <summary data-i18n="faq_2_q">هل أستطيع طلب تعديلات؟</summary>
+              <p data-i18n="faq_2_a">نعم، كل باقة تشمل جولات تعديل حسب الاتفاق قبل الإطلاق.</p>
+            </details>
+            <details>
+              <summary data-i18n="faq_3_q">هل توفرون دعمًا بعد التسليم؟</summary>
+              <p data-i18n="faq_3_a">بالتأكيد، يتوفر دعم فني وخطط صيانة شهرية مرنة.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section id="ai-support" class="section">
+        <div class="container">
+          <div class="section-head reveal">
+            <h2 data-i18n="ai_title">مساعد Moataz Web الذكي</h2>
+            <p data-i18n="ai_desc">اختر سؤالك لتحصل على إجابة فورية بدون كتابة.</p>
+          </div>
+          <div class="assistant reveal" aria-live="polite">
+            <div id="chatWindow" class="chat-window">
+              <div class="chat-msg assistant-msg" data-i18n="ai_welcome">
+                أهلاً بك 👋 اختر سؤالًا من الخيارات أدناه.
+              </div>
+            </div>
+            <div class="chat-options" id="chatOptions"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section alt-section">
+        <div class="container">
+          <div class="section-head reveal">
+            <h2 data-i18n="contact_title">ابدأ مشروعك الآن</h2>
+            <p data-i18n="contact_desc">دعنا نبني حضورًا رقميًا يليق بمستوى علامتك.</p>
+          </div>
+          <div class="contact-card reveal">
+            <a href="mailto:moataz8business@gmail.com">moataz8business@gmail.com</a>
+            <a href="tel:+967734445109">+967 734 445 109</a>
+            <a href="#" data-i18n="contact_cta">احجز مكالمة استشارية</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p data-i18n="footer_copy">© 2026 Moataz Web. جميع الحقوق محفوظة. صنع بفخر في اليمن</p>
+        <p data-i18n="footer_tag">Premium Websites. Real Business Impact.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
